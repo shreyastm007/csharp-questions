@@ -1,0 +1,13 @@
+1. In class A define data members and methods with different access specifiers and try to access in the class B note all the errors
+
+try to access all the methods and data members from class A in class C. note all the errors
+
+2. what happens while converting string to int when we have String data with Number
+
+3. Is there any ways to convert the alfa numerical value into int 
+
+4. What is the diff bw parse() and TryParse()
+ 
+5. Why cant we implicitly convert char to string 
+
+6. Consider an array, insert some values, loop using  for loop, for each item in an array, Console.WriteLine (hello world)

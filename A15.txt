@@ -1,0 +1,41 @@
+1. Explain the Examples for looping stmnts
+2. Explain jagged array example
+3. Diff bn Out anf Ref parameter
+4. Diff bn break and continue stmnts
+5. list the diff types of comments in c#
+
+
+6. Exp the 4 steps involved  in c# code compilation
+7. Discuss the various methods to pass parameters in a method
+
+--------------
+8. name all c# access modifiers
+In C#, there are 4 basic types of access modifiers.
+
+public:When we declare a type or type member public, 
+it can be accessed from anywhere.
+
+private:When we declare a type member with the private 
+access modifier, it can only be accessed within the same class.
+
+protected:When we declare a type member as protected, it can 
+only be accessed from the same class and its derived classes.
+
+internal:
+When we declare a type or type member as internal, it can be accessed only 
+within the same assembly.
+
+An assembly is a collection of types (classes, interfaces, etc) 
+and resources (data). They are built to work together and form a
+ logical unit of functionality.
+---------------
+
+9. Mention all advantages of c#
+
+---------------
+10. What is Abstract Class
+
+---------------
+11. Explain GRASP principles
+
+---------------

@@ -1,0 +1,46 @@
+1. Try writing test cases on each of the assert method
+
+2. what is the difference time of 3 zones from utc 
+
+3. what do u mean by DST in c# date and time object
+
+4. Explain different kinds of date (Unspecified, UTC and local)
+
+5. Explain functional programming approach and its benefits.
+
+You can say FP is used to eliminate code redundancies and to 
+create a better coding style.
+By allowing functions to be passed as parameters the code 
+will be greatly reduced and makes your programming more abstract and reusable.
+
+Here are the main characteristics of any functional programming language:
+First-Class Functions
+Higher-Order Functions
+Pure Functions
+Currying or Partial Application
+Recursion
+Pattern Matching
+Memoization
+
+Optimum Transparency. 
+
+Lazy Evaluation
+          
+
+Enhanced Readability
+
+Static Variables 
+
+Seamless Parallel Programming
+
+Validating Functional Signatures
+
+
+Conclusion:To summarize the advantages of functional programming, 
+the user can use mathematics-like values and functions to yield results 
+that have no outside influence and is well-evaluated throughout.
+
+6. Write a c# program to extract date property and display 
+date and time value in formatted output (your own format)
+
+7. Write a c# program to get day of a week for a specified date

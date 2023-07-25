@@ -1,0 +1,70 @@
+1.Explain Jetbrain rider.
+
+Rider helps you develop .NET, ASP.NET, .NET Core applications on Windows, 
+macOS, or Linux. It provides rich editing support and code insight for 
+languages used in .NET development, from C#, VB.NET, and F# to ASP.NET 
+Razor syntax, JavaScript, TypeScript, XAML, XML, HTML, CSS, 
+SCSS, JSON, and SQL.
+
+a)Languages and project types.
+b)ReSharper + IntelliJ platform.
+c)Designed to be smart and fast.
+
+1)Intelligent code editor.
+2)Killer code analysis
+3)Navigation and search
+4)Decompiler
+5)Refactoring
+6)Unit testing
+7)Debugging
+8)Version control
+9)Web development
+10)Databases and SQL
+11)Plugins
+------
+2.Explain nuget package manager.
+
+For .NET (including .NET Core), the Microsoft-supported mechanism for 
+sharing code is NuGet, which defines how packages for .NET 
+are created, hosted, and consumed.
+
+NuGet package is a single ZIP file with the .nupkg extension 
+that contains compiled code, other files related to that code, and 
+a descriptive manifest that includes information like the package's 
+version number. Developers with code to share create packages and publish 
+them to a public or private host. Package consumers obtain those 
+packages from suitable hosts, add them to their projects.
+
+
+NuGet provides the central nuget.org repository with support for 
+private hosting.
+NuGet provides the tools developers need for creating, publishing, 
+and consuming packages.
+Most importantly, NuGet maintains a reference list of packages used 
+in a project and the ability to restore and update those packages 
+from that list.
+------
+3.Explain run use and map methods in middlewares.
+
+Run Extension:
+The nature of Run extension is to short circuit the HTTP pipeline 
+immediately. It is a shorthand way of adding middleware to the 
+pipeline that does not call any other middleware which is next to 
+it and immediately return HTTP response. So, it’s recommended to use 
+Run extension to hook middleware at last in HTTP pipeline.
+
+Use Extension:
+In case of Use extension, there is a chance to pass next invoker, 
+so that HTTP request will be transferred to the next middleware 
+after execution of current Use if there next invoker is present. 
+In this example, we have attached next invoker with Use extension, 
+so that HTTP call will get transferred to next middleware even we 
+tried to return.
+
+Map Extension:
+Map() method is used to map the middleware to a specific URL.
+Map extensions are used as convention for branching the pipeline. 
+We can hook delegate to Map extension to push it to HTTP pipeline.
+Map simply accepts a path and a function that configures a separate 
+middleware pipeline. In this example, we will hook one 
+middleware/delegate to HTTP pipeline using Map extension.

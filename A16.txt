@@ -1,0 +1,8 @@
+5. Explain VMS (Virtual Machine Scale)
+--------------------
+
+6. What are Fault Domain,Update Domain
+7. What are Scale sets do scale set work with azure availability sets
+8. What is Vnet
+----------------------
+9. Differnece between server bus queue  and storage queue

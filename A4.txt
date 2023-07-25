@@ -1,0 +1,39 @@
+1. WACP to read a nos of values in an array and display it 
+on reverse order?
+-----
+
+2. WACP to find sum of all elements in an array?
+-----
+
+3. WACP to duplicate the no of elements in an array?
+-----
+
+4. WACP to perform all types of sorting : bubble sort,insertion sort, 
+selection sort, quick sort, merge sort and heap sort.
+
+5. WACP to insert new value in to an array ?
+a)Array Index Initializer
+b)Array.SetValue() Method
+c)by Using Lists
+
+6. Explain jagged multidimensional array, process of initialisation 
+and accessing ?
+
+7. Explain use of ? In c#?
+------
+
+8. WACP for while and do-while looping using an array?
+------
+
+9. Can we use for- each loop in multidimensional array, if not why? 
+ However, with multidimensional arrays, using a nested for loop gives 
+you more control over the order in which to process the array elements.
+Simply use two nested for loops.
+------
+
+10. Try if you can hide or shadow the virtual methods?
+C# also provides a concept to hide the methods of the base class from 
+derived class, this concept is known as Method Hiding. It is also known 
+as Method Shadowing. 
+In method hiding, you can hide the implementation of the methods of 
+a base class from the derived class using the new keyword.

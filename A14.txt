@@ -1,0 +1,50 @@
+1. What is payload?
+
+When data is sent over the internet, it spits out to two pieces of information, 
+overhead and payload.The overhead information is removed from the view once it 
+reaches its destination. 
+ 
+The payload of an API is the data you are interested in transporting to the 
+server when you make an API request.It is the body of your 
+HTTP request and response message.
+
+ex:imagine sending the message, "Hello" and 
+labeling it "msg". "Hello" is referred to as the payload 
+and "msg" is the overhead. Once the overhead and payload reach their destination, 
+the only data that is viewable is "Hello". The label "msg" is only used for 
+internal purposes to identify your data.
+  
+The payload of an API can be sent or received in various formats such as 
+JSON or XML. 
+In a query string, the payload can usually be identified using curly braces "{}".
+
+--------------
+
+2. Explain http methods get, put ,post, patch, delete.
+The GET method is used to perform the READ operation.
+The POST method is used to perform INSERT operation.
+The PUT method is used to perform UPDATE operation. 
+The DELETE method is used to perform the DELETE operation. 
+
+--------------
+
+3. Difference between HTML helpers and tag helpers
+--------------
+
+4.image tag helper:
+  input tag helper: 
+--------------
+
+5. Cache tag helpers
+Enable
+Expire-on
+Expire-after
+Expire-sliding
+--------------
+
+6. Form tag helpers
+--------------
+ 
+7. Select:
+   textarea tag helpers:
+--------------

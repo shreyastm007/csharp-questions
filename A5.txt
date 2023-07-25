@@ -1,0 +1,65 @@
+1. Create custom exception
+------
+2. How to generalize an array
+------
+3. Create Exception handler for zerodivider
+------
+4. When to use keywords finally,try,catch, throw
+------
+5. Explain the methods in the list from genric class collection:
+What are all the parameters these methods takes and what are the return type
+
+1. list.add()
+2. list.contains()
+3. list.remove()
+4. list.reverse()
+5.list .find all()
+------
+6. Difference between Add() and tryAdd() methods in dictionary
+ADD() Method
+=================
+Dictionary<TKey,TValue>.Add() Method is used to add a specified key and 
+value to the dictionary.
+
+Syntax:
+
+public void Add (TKey key, TValue value);
+Parameters:
+
+key: It is the key of the element to add.
+value: It is the value of the element to add. The value can be null 
+for reference types.
+
+Exceptions:
+
+ArgumentNullException : If the key is null.
+ArgumentException : If an element with the same key already exists 
+in the Dictionary
+
+TRY ADD() method
+=========================================
+Attempts to add the specified key and value to the dictionary.
+
+syntax
+-------------
+public bool TryAdd (TKey key, TValue value);
+
+Parameters
+-------------------
+key
+TKey
+The key of the element to add.
+
+value
+TValue
+The value of the element to add. It can be null.
+
+Returns
+------------
+Boolean
+true if the key/value pair was added to the dictionary successfully; 
+otherwise, false.
+
+Exceptions
+---------------
+ArgumentNullException

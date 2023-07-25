@@ -1,0 +1,101 @@
+
+--ORDER of execution first priority not and then or
+--creation of bulk table
+
+
+ 39)create table employee_info ( empid int primary key, name varchar(30) not null,email varchar(30),mobile long,designation varchar(30),
+doj date,salary integer,dob date,age int,check(age>18),dept_id int foreign key,govt_id varchar(10),gender varchar(5) not null,status varchar(10),exp int);
+--queryto display all the record of employee who is working as software developer and belongs to dept number 10
+40)select * from employee where designation="software developer" and dept_id=10;
+--write a query to display all record of employee  who is working in dept number 20 and employee salary should be more than 5 thousand 
+41) select * from employee where dept_id=20 and salary>5000;
+--write a query to display all record of employee excluding tester
+42) select * from employee where not designation="tester";
+--write a query to display all record of developer hired after 2015
+ 43)select * from employee where doj > "2015-12-31" and designation="software developer";
+ ---write name of all the employee working as tester as well as dept no 10 or employee who is working as clerk select salary is greater than 15k
+  44) select * from employee where designation="tester" and dept_id="10" OR designation="admin" and salary>15000;
+  --write name of all the employee working in dept no 10 20 30 40 
+  45) select * from employee where dept_id=10 || dept_id=20||dept_id=30||dept_id=40;
+                        OR
+  select * from table_name where columnname in (value1,value2,value3);
+  
+  select * from employee where dept_id in (10,20,30,40);
+--wrqtd the detail of  admin or software developer or tester and working in dept no 10 20 30
+ 46) select * from employee where designation in ("software developer","tester","admin") and dept_id in (10,20,30);
+-- w q to display exculding all the employee working in 20 30 40
+ 47) select * from employee where dept_id not in (20,30,40);
+--between
+write a q to display all the records whos salary lies in between 10k to 20k
+ 48) select * from employee where salary>10000 and salary<20000;
+ select * from employee where salary between 10000 and 20000;
+ --waqtd  all record of employee who were hired during 2018
+49)  select * from employee where doj between "2018-01-01" and "2018-12-31";
+ --not hired during 2018
+50) select * from employee where doj not between "2018-01-01" and "2018-12-31";
+ ---waqtd all recordting exculding whose salary range is in between 25000 and 35000?
+  51) select * from employee where salary not between 25000 and 35000; 
+ --null
+  52)select * from table_name where columnname is null;
+  select * from table_name where columnname is not null;
+  --like is used for pattern matching
+ select * from table_name where columnname like "%/_";
+  %  => when length of character literals is not known we make use of %  it matches pattern from one to n characters where n is unknown
+  _  => matches only single character.
+  --53)waqtd all record of employee whose name starts with s
+   select * from employee where name like "s%";
+   --54)waqtd whos name having atleast 2 a?
+   select * from employee where name like "%a%a%";
+   --55)waqtd all record of employee whose name ha two consecuitive ll?
+    select * from employee where name like "%ll%";
+    --56)waqtd all record of employee whose third character should have i ?
+    select * from employee where name like "__i%";
+    --57)waqtd all record of employee whose name having four characters?
+    select * from employee where name like "____";
+    -- not like
+    --58)waqtd all the record of employees exculding whose name starts with z?
+     select * from employee where name not like "z%";
+     --ANY exit  
+     --59)waqtd sum of all salaries of emplyee?
+     select sum(salary) total salary from employee;
+      --60) waqtd count of number of employee?
+      select count(name) from employee;
+      --61)waqtd avg of salary?
+      select avg(Salary) from employee;
+    ------singlerow functions-----
+      --r & d list of single row functions
+      upper() lower() length() concat() reverse()
+CLAUSE select from where
+--group by
+Select * from table_name where condition group by columnname;
+--62)waqtd maximum salary in each dept
+--63)waqtd number of tester working in each department
+ select count(dept_id),designation from employee where designation="tester" group by dept_id;
+--64)waqtd no of count of employee who has joined on same date
+ select count(doj),doj from employee group by doj;
+--65)waqtd total salary of is greater than 20k
+--Order by
+SELECT COLUMN1,column2 from table_name 
+order by column1 column2 asc/desc;
+--66)waqtd all record of employee on basis of salary
+select * from employee order by salary asc;
+
+--sub queries---
+67.select * from table_name where columnname operator(select * from table_name where condition);
+--if condition is not known then we go for sub-query
+single row sub query  ===> Comparision operator
+ if inner query returns single record and also the operator used in outer query  is Comparision operator.
+ --write a query to display name of all who were hired after rahul employee 
+68.select name from employee where doj>(select doj from employee where name="rahul");
+write a query to display all record of employee working in admin dept
+69.select * from employee where dept_id=(select dept_id from department_info where dept_name="administration");
+multi row sub query ====>IN ANY ALL
+70.select * from table_name where condition IN ANY ALL (select * from table_name where condtion)
+waqtd all record of employee whose is working in particular location and that location contains atleast one 
+71.select * from employee where dept_id in (select dept_id from department_info where location like "%o%")
+waqtd second maximum salary in employee table
+72.select max(salary) from employee where salary <(select max(Salary) from employee);
+waqtd third maximum salary 
+73.select max(salary) as third_max from employee where salary <(select max(salary) from employee where salary <(select max(Salary) from employee));
+
+

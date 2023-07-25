@@ -1,0 +1,58 @@
+1. What is helper class
+A Helper class is a lesser known code 
+where a coder has identified some miscellaneous, 
+commonly used operations and attempted to make 
+them reusable by lumping them together in an 
+unnatural grouping.
+
+3. Explain kestrel web server
+
+Kestrel is an open source, cross platform
+and a default webserver used for Asp.Net Core applications. 
+Asp.
+Kestrel is event-driven, asynchronous I/O based server used to host 
+ASP.NET applications on any platform. 
+
+It was built to be fast; in fact, it’s six times faster 
+than node.js for static and plain text operations.
+
+Kestrel has support on all platforms and versions 
+supported by .NET Core. When 
+you create a new project in Visual Studio, your 
+project is automatically configured to run in Kestrel.
+
+Net Core applications run Kestrel webserver as  
+server to handle web request.
+ Kestrel does 
+not have every advanced features of webservers like IIS, 
+ Apache, etc has. Due to its lightweight nature, 
+Kestrel provides better request processing performance 
+to Asp.Net Core applications.
+ 
+
+
+4. Explain the difference between asp.net core 
+   and asp.net .
+
+a)Asp.Net Build for Windows	
+Asp.Net Core Build for Windows, Mac and Linux
+
+b)Asp.Net has a Good Performance	
+ASP.Net core has higher performances than ASP.Net.
+
+c)Asp.Net Supports WebForm, Asp.Net MVC and Asp.Net WebAPI.	
+Asp.Net Core does not support WebForm. It supports MVC, Web API and 
+Asp.Net Web pages originally added in .Net Core 2.0.
+
+d)Support C#, VB and many other languages and also support WCF, WPF and WF	
+Support only C#, F# language. VB support to added a short time and 
+no support WCF, WPF and WF but support for WCF client libraries are available.
+
+
+e)Asp.Net MVC application added Web.config, Global.asax, Application Start.	
+Core did not support Web.config and Global.asax files. 
+It has supporting appsettings.json.
+
+f)We Need to re-compile after the code change.	
+Core Browser refresh will compile and executed the 
+code no need for re-compile.

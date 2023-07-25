@@ -1,0 +1,64 @@
+1. What role does IIS manager for ASP.net MVC
+The IIS Manager tool allows web administrators to modify website options, 
+such as default pages, error pages, logging settings, security settings,
+ and performance optimizations. IIS can serve both standard 
+HTML webpages and dynamic webpages, such as ASP.NET applications and 
+PHP pages.
+---------------------------------------
+
+Model state
+Model state represents errors that come from two subsystems: model binding 
+and model validation. Errors that originate from model binding 
+are generally data conversion errors. For example, an "x" is entered in an 
+integer field.
+
+
+Web API controllers don't have to check ModelState.IsValid if they have 
+the [ApiController] attribute. In that case, an automatic HTTP 400 
+response containing error details is returned when model state is invalid. 
+---------------------------------------
+
+2.Model-Binding.
+Model binding allows controller actions to work directly with model type, 
+rather than HTTP requests. Mapping between 
+incoming request data and application models is handled by model binders. 
+Developers can extend the built-in model binding functionality by implementing 
+custom model binders.
+
+ For example, when you have a key that can be used to look up model data. 
+You can use a custom model binder to fetch data based on the key.
+
+Model binding simple and complex types:
+ A simple type is converted from a single string using TypeConverter 
+or a TryParse method. A complex type is converted from multiple input values.
+
+ASP.NET Core MVC can take a base64-encoded string and use a 
+ByteArrayModelBinder to convert it into a byte array. 
+The ByteArrayModelBinderProvider maps byte[] arguments to ByteArrayModelBinder.
+
+Custom model binder sample:
+Converts incoming request data into strongly typed key arguments.
+
+Binding to different models of derived types is known as polymorphic 
+model binding. Polymorphic custom model binding is required when the request 
+value must be bound to the specific derived model type. Polymorphic 
+model binding.
+---------------------------------------
+
+3.Model-Validation.
+Both model binding and model validation occur before the execution of a 
+controller action or a Razor Pages handler method. For web apps, it's the 
+app's responsibility to inspect ModelState.IsValid and react appropriately.
+
+ Model validation occurs after model binding and reports errors 
+where data doesn't conform to business rules. For example, a 0 is entered in 
+a field that expects a rating between 1 and 5.
+
+Rerun validation
+Validation is automatic, but you might want to repeat it manually. 
+For example, you might compute a value for a property and want to 
+rerun validation after setting the property to the computed value. 
+To rerun validation, call ModelStateDictionary.ClearValidationState to 
+clear validation specific to the model being validated followed by 
+TryValidateModel.
+

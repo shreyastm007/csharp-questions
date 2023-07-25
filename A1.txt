@@ -1,0 +1,91 @@
+1. Explain the Execution Flow of a .net application?
+
+CLR contains a component called Just-In-Time Compiler (JIT) which 
+will convert the Intermediate language into native code which can be 
+understood by the underlying operating system.
+The two major components of . NET Framework are the Common Language 
+Runtime (CLR) and the . NET Framework Class Library. 
+The CLR is the execution engine that handles running applications.
+-------------------------
+2. Difference between MySQL and SQL server?
+
+a)However, SQL server is more secure than MySQL. 
+It does not let any process to access and 
+manipulate the database files at run time. 
+
+b)Developed by Microsoft.	Developed by Oracle.
+
+c)Expects a large amount of operational storage space.	
+Expects less amount of operational storage space.
+
+d)MySQL is free to use.	SQL Server is costly.
+
+-------------------------
+3. Difference between ASP.net and ASP.net core?
+
+a)Asp.Net Build for Windows	
+Asp.Net Core Build for Windows, Mac and Linux
+
+b)Asp.Net has a Good Performance
+ASP.Net core has higher performances than ASP.Net
+
+c)We Need to re-compile after the code change.	
+Core Browser refresh will compile and executed the code 
+no need for re-compile.
+
+d)Based on .NET framework only.
+Based on .NET and Core framework.
+
+
+-------------------------
+4. What is Meta Package?
+
+A 'meta-package' is a convenient way to bulk-install groups of 
+applications, their libraries and documentation.
+Metapackages describe a set of packages that are used together.
+-------------------------
+5. Can a ASP.net application work with lower version of .net framework
+Yes.
+
+-------------------------
+6. What does .li file means?
+The LI$ file type is primarily associated with MS Compressed Library. 
+LI$ File extension: LI$ File type: MS Compressed Library files.
+
+-------------------------
+
+7. What is ILAssembler and ILDissassembler?
+
+The IL Assembler generates a portable executable (PE) file from 
+intermediate language (IL) assembly.You can 
+run the resulting executable, which contains IL and the required 
+metadata, to determine whether the IL performs as expected.
+This tool is automatically installed with Visual Studio.
+
+The Portable Executable (PE) format is a file format for executables, 
+object code, DLLs and others used in 32-bit and 64-bit versions of Windows operating systems. 
+
+Syntax:ilasm [options] filename [[options]filename...]
+
+The IL Disassembler is a companion tool to the IL Assembler 
+(Ilasm.exe). Ildasm.exe takes a portable executable (PE) file 
+that contains intermediate language (IL) code and creates a 
+text file suitable as input to Ilasm.exe. 
+This tool is automatically installed with Visual Studio.
+Syntax:ildasm [options] [PEfilename] [options]
+
+-------------------------
+
+8. What is Monolithic Application?
+
+They're typically complex applications.a monolithic application 
+describes a single-tiered software application 
+in which the user interface and data access code are combined 
+into a single program from a single platform. 
+
+For example, consider a monolithic ecommerce SaaS application. 
+It might contain a web server, a load balancer, 
+a catalog service that services up product images, 
+an ordering system, a payment function, and a shipping component.
+
+-------------------------

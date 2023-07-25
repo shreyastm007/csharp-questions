@@ -1,0 +1,34 @@
+1.Routing:
+Routing is the process of directing an HTTP request to a controller.
+
+ASP.NET Core controllers use the Routing middleware to match the URLs 
+of incoming requests and map them to actions.
+
+MapControllerRoute is used to create a single route. The single 
+route is named default route. Most apps with controllers and views 
+use a route template similar to the default route. 
+-------------------
+2.Session.
+Session is a feature in ASP.NET Core that enables us to save/store 
+the user data.
+
+Session stores the data in the dictionary on the Server and SessionId 
+is used as a key. The SessionId is stored on the client at cookie. 
+The SessionId cookie is sent with every request.
+
+The SessionId cookie is per browser and it cannot be 
+shared between the browsers.
+
+There is no timeout specified for SessionId cookie and they 
+are deleted when the Browser session ends.
+Microsoft.AspNetCore.Session package provides middleware 
+to manage the sessions in ASP.NET Core. 
+
+We need to call "AddSession" method in ConfigureServices 
+method of startup class.
+The "AddSession" method has one overload method, which accepts 
+various session options such as Idle Timeout, Cookie Name and 
+Cookie Domain etc.
+
+ The default session timeout at the Server is 20 minutes but 
+it is configurable.
